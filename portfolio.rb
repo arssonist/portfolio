@@ -16,3 +16,19 @@ end
 get '/portfolio/about' do
   erb :about
 end
+
+get '/portfolio/work' do
+  erb :work
+end
+
+get 'portfolio/resume' do
+  erb :work
+end
+
+get '/portfolio/blog' do
+  erb :work
+end
+
+get '/portfolio/other_links' do
+  erb :work
+end
