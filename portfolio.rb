@@ -1,38 +1,41 @@
 require 'sinatra'
 
-
-
-
+#
 get '/' do
-  loop do
-  @my_app_name = "Chris: Web Designer Extrada-not"
-  @time = Time.new
-  @city = "Toronto"
+    @my_app_name = "My small sut sighty Portfolio"
+    @framework = "Sinatra"
+    @city = "Toronto"
   erb :index
 end
-end
 
-#always a slash in front
-get '/portfolio/about' do
+# get '/portfolio/index' do
+#     redirect 'http://localhost:4567'
+# end
+
+
+get '/portfolio/about/' do
   erb :about
 end
 
-get '/portfolio/work' do
+get '/portfolio/work/' do
   erb :work
 end
 
-get 'portfolio/resume' do
+get '/portfolio/resume/' do
+  erb :resume
+end
+
+get '/portfolio/blog/' do
   erb :work
 end
 
-get '/portfolio/blog' do
-  erb :work
-end
+# get '/portfolio/other_links/' do
+#   erb :work
+# end
 
-get '/portfolio/other_links' do
-  erb :work
+get '/portfolio/contact/' do
+  erb :contact
 end
-
 
 # Exaple ROUTES
 # #always a slash in front
