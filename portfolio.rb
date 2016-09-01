@@ -2,7 +2,7 @@ require 'sinatra'
 
 #
 get '/' do
-    @my_app_name = "My small sut sighty Portfolio"
+    @my_app_name = "My small but mighty Portfolio"
     @framework = "Sinatra"
     @city = "Toronto"
   erb :index
